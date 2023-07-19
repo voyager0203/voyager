@@ -157,13 +157,11 @@
       //     // 06_위와 같이 HTML요소에 넣어주고 있다(innerHTML)
       // }
       // 08_아래 내용 추가(여기까지 코드 설명, 이후 코드펜 내용)
-      if (prediction[0].className == "묵" && prediction[0].probability.toFixed(2) > 0.8) {
-        labelContainer.childNodes[0].innerHTML = "묵 입니다."
+      if (prediction[0].className == "슬픔" && prediction[0].probability.toFixed(2) > 0.8) {
+        labelContainer.childNodes[0].innerHTML = "슬픔 입니다."
       }
-      else if (prediction[1].className == "찌" && prediction[1].probability.toFixed(2) > 0.8) {
-        labelContainer.childNodes[0].innerHTML = "찌 입니다."
-      else if (prediction[1].className == "빠" && prediction[2].probability.toFixed(2) > 0.8) {
-        labelContainer.childNodes[0].innerHTML = "빠 입니다."
+      else if (prediction[1].className == "기쁨" && prediction[1].probability.toFixed(2) > 0.8) {
+        labelContainer.childNodes[0].innerHTML = "기쁨 입니다."
       } else {
         labelContainer.childNodes[0].innerHTML = "알 수 없습니다."
       }
